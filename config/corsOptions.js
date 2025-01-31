@@ -1,3 +1,4 @@
+//Cross Origin Resource Sharing // some code to be removed after development
 const allowedOrigins = require('./allowedOrigins');
 
 const corsOptions = {
@@ -8,7 +9,6 @@ const corsOptions = {
       callback(new Error('Not allowed by CORS'));
     }
   },
-  credentials: true,
   optionsSuccessStatus: 200,
 };
 
