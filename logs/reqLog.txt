@@ -2547,3 +2547,6 @@
 2025/01/31	23:07:04	f2a975bf-fd5f-4cf5-8ed5-38e87c0f1a37	GET	undefined	/employees
 2025/01/31	23:07:19	c8f12abe-ddfb-4787-bd9a-be40adbbf734	POST	undefined	/auth
 2025/01/31	23:07:27	02343783-ab8d-4be0-bb46-075f8cdf3228	GET	undefined	/employees
+2025/01/31	23:28:45	bc9fcc6f-39e8-45e1-97c1-416690621c4c	POST	undefined	/auth
+2025/01/31	23:28:46	2e777426-0853-4079-b93a-5caeaa1a9121	POST	undefined	/auth
+2025/01/31	23:28:48	81cc3b69-554e-4d19-b07b-cc27825027ca	POST	undefined	/auth
