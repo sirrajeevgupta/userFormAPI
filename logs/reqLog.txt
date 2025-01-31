@@ -2541,3 +2541,9 @@
 2025/01/31	22:51:45	f4516508-7fb7-48b1-9348-30dea8d9fbfb	GET	undefined	/refresh
 2025/01/31	22:51:46	066a467b-67a6-4b5f-a39c-4dc7f5f78cb8	GET	undefined	/refresh
 2025/01/31	22:51:47	b1ca57c9-fbdb-49e3-9ef2-55e2bedcc7c3	GET	undefined	/refresh
+2025/01/31	23:06:44	c7a33b18-1c05-48b5-970f-8f29c0a36f5a	GET	undefined	/employees
+2025/01/31	23:06:45	4013962e-4309-4210-8862-b9e50250b99b	GET	undefined	/employees
+2025/01/31	23:06:49	c2467abc-f6ef-4813-ac4b-a7bd0dde1536	GET	undefined	/employees
+2025/01/31	23:07:04	f2a975bf-fd5f-4cf5-8ed5-38e87c0f1a37	GET	undefined	/employees
+2025/01/31	23:07:19	c8f12abe-ddfb-4787-bd9a-be40adbbf734	POST	undefined	/auth
+2025/01/31	23:07:27	02343783-ab8d-4be0-bb46-075f8cdf3228	GET	undefined	/employees
