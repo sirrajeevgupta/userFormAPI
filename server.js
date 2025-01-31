@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cors = require('cors');
-const corsOptions = require('./config/corsOptions');
-const credentials = require('./middleware/credentials');
+//const corsOptions = require('./config/corsOptions');
+//const credentials = require('./middleware/credentials');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const verifyJWT = require('./middleware/verifyJWT');
@@ -24,6 +24,15 @@ app.use(logger);
 //app.use(credentials);
 
 //Cross Origin Resource Sharing
+//app.use(cors(corsOptions));
+
+const corsOptions = {
+  origin: 'https://userform-yto1.onrender.com', // Replace with your frontend URL
+  methods: 'GET,POST,PUT,DELETE',
+  allowedHeaders:
+    'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+};
+
 app.use(cors(corsOptions));
 
 // built-in middleware to handle urlencoded data
