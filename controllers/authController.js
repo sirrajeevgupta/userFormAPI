@@ -13,7 +13,6 @@ const handleLogin = async (req, res) => {
   if (!foundUser) {
     return res.status(401).json({ message: `Username ${user} does not exist` });
   }
-
   // evaluate password
   const passMatch = await bcrypt.compare(pass, foundUser.password);
   if (passMatch) {
@@ -34,7 +33,6 @@ const handleLogin = async (req, res) => {
       process.env.REFRESH_TOKEN_SECRET,
       { expiresIn: '1d' }
     );
-
     // Saving refreshToken with current user
     foundUser.refreshToken = refreshToken;
     const result = await foundUser.save();
@@ -44,8 +42,8 @@ const handleLogin = async (req, res) => {
     // Creates Secure Cookie with refresh token
     res.cookie('jwt', refreshToken, {
       httpOnly: true,
-      sameSite: 'None', //frontend error fix
       secure: true, //frontend error fix, only for DEV & to be used in browser/production
+      sameSite: 'None', //frontend error fix
       maxAge: 24 * 60 * 60 * 1000,
     });
 
